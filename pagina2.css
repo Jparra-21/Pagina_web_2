@@ -25,6 +25,7 @@
     border-radius: 5px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     cursor:pointer; 
+    z-index: 10;
 }
 .cuerpo {
     background-image: url("./imagen_fondo.jpg");
@@ -46,7 +47,7 @@
 }
 .cuerpo2 {
     width: 100%;
-    top:2553px;
+    top:2655px;
     background-image: linear-gradient(#8eb6dc, #7cb1e4);
     position:absolute;
     height:100px;
@@ -73,10 +74,10 @@
     display:grid;
 }
 .cuerpo3 {
-    height: 700px;
-    min-height: 500px;
+    min-height: fit-content;
+    height: 800px;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     background-image: linear-gradient(#8eb6dc, #fafafa);
     display:grid;
     position:relative;
@@ -87,55 +88,60 @@
 }
 .cuerpo3 > div {
     text-align: left;
-    padding-top: 100px;
-    padding-left:100px;
+    padding-top: 80px;
+    padding-left:80px;
     font-size: 30px;
 }
 .cuerpo4 {
     display:grid;
     position:relative;
 }
-.submit {
-    font-weight: 400;
-    color: #f9f8f8;
-    background-color: #076cfa;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid transparent;
-    top:15px;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    width: 200px;
-    height: 50px;
-    position:relative;
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 70%;
+    margin: 5 auto;
+    z-index: 1;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="Telefono"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  button[type="submit"]:hover {
+    background-color: #1E90FF;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #00BFFF;
+  }
+
+  button[type="submit"] {
+    background-color: #00BFFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-}
-.texto1 {
-    margin-left: 30%;
-}
-.formulario3 {
-    width: 100%;
-    max-width: 86%;
-    border-radius: 5px;
-    border-color: rgb(33, 32, 32);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    line-height: 30px;
-}
-.formulario2 {
-    margin-left: 80px;
-    width: 35%;
-    border-radius: 5px;
-    border-color: rgb(33, 32, 32);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    line-height: 30px;
-}
-.formulario1 {
-    width: 35%;
-    border-radius: 5px;
-    border-color: rgb(33, 32, 32);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    line-height: 30px;
 }
   .google-map iframe {
     position: relative;
