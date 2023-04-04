@@ -8,24 +8,16 @@
     background-size: cover;
     background-position-y:center;
     background-position-x: center;
-    z-index: -1;
     color:#8eb6dc;
-    top:-100px;
     position:absolute;
 }
 .contacto {
-    height:50px;
-    width:100px ;
     background-color:white;
     position: sticky;
-    top: 2%;
-    left:87%;
     display:inline-block;
     position: -webkit-sticky;
-    border-radius: 5px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     cursor:pointer; 
-    z-index: 10;
 }
 .cuerpo {
     background-image: url("./imagen_fondo.jpg");
@@ -41,10 +33,13 @@
     top:100%;
     position:absolute;
     background-color: color(#8eb6dc, 100%);
+    grid-auto-rows:min-content;
+    display:grid;
 }
 .fondo {
-    margin:0px; 
     background-color:azure;
+    margin: 0px;
+    padding: 0px;
 }
 .cuerpo2 {
     width: 100%;
@@ -57,26 +52,23 @@
     text-align: center;
     font-style: italic;
     font-size: 46px;
-    margin-block-start: 200px;
-    margin-block-end: 25px;
     width: 40%;
     min-width: 40vh;
     margin-left: 50%;
-    position:absolute;
+    position:relative;
     margin-right: 15%;
     display:grid;
+    padding-top:25%;
 }
 .cita2 {
     text-align: center;
-    top:50%;
     font-style: italic;
     font-size: 20px;
-    margin-block-end: 25px;
     width: 40%;
     min-width: 40vh;
     margin-left: 50%;
     display:grid;
-    position:absolute;
+    position:relative;
 }
 .cuerpo3 {
     min-height: fit-content;
@@ -89,9 +81,10 @@
     display:grid;
     position:absolute;
     top:200%;
-    grid-template-columns:auto auto;
+    grid-template-columns:30% 50%;
     font-family:Lucida Bright;
     font-weight: 400;
+    
 }
 .cuerpo3 > div {
     text-align: left;
@@ -107,8 +100,8 @@ form {
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 20px;
-    width: 70%;
-    margin: 5 auto;
+    width: 100%;
+    margin: 5;
     z-index: 1;
   }
   
@@ -116,6 +109,8 @@ form {
     display: block;
     margin-bottom: 10px;
     color: #333;
+    text-align: left;
+    width: min-content;
   }
   
   input[type="text"],
@@ -131,6 +126,9 @@ form {
   
   textarea {
     height: 150px;
+    max-height: 150px;
+    max-width: 90%;
+    resize: none;
   }
   button[type="submit"]:hover {
     background-color: #1E90FF;
