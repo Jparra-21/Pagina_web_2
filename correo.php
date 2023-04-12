@@ -72,8 +72,8 @@ if (isset($_POST['Email'])) {
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
-    <html><p>Gracias por contactarnos.</p>
-    <button onclick="history.go(-1);">Back </button></html>
+    <html><body><p>Gracias por contactarnos.</p>
+    <button onclick="history.go(-1);">Back </button></body></html>
 
 <?php
 }
