@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <title>Yasna Mora</title>
     <link rel="stylesheet" href="./pagina2.css"/>
@@ -31,12 +32,12 @@
                     <input type="email" id="email" name="email" required>
                   
                     <label for="Telefono">Telefono:</label>
-                    <input type="Telefono" id="telefono" name="telefono" required>
+                    <input type="telefono" id="telefono" name="telefono" required>
                   
                     <label for="message">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
                   
-                    <button type="submit">Enviar</button>
+                    <button type="submit" onclick="myFunction()"><span class="popuptext" id="myPopup">Mensaje Enviado</span>Enviar</button>
                   </form>
             </div>
         </section>
@@ -45,6 +46,13 @@
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>   
         </div> 
-        <section class="cuerpo2"></section>      
+        <section class="cuerpo2"></section>  
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+            </script>    
 </body>
 </html>
