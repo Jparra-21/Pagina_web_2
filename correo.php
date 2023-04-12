@@ -67,12 +67,13 @@ if (isset($_POST['Email'])) {
     $headers = 'De: ' . $email . "\r\n" .
         'Responder-a: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
+    @mail($email_to, $email_subject, $email_mensaje, $headers);
 ?>
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
-    Gracias por contactarnos.
+    <html><p>Gracias por contactarnos.</p>
+    <button onclick="history.go(-1);">Back </button></html>
 
 <?php
 }
