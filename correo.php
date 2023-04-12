@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['Email'])) {
+if (isset($_POST['email'])) {
 
     // EDIT THE FOLLOWING TWO LINES:
     $email_to = "javierparraguirrel@gmail.com";
@@ -67,14 +67,12 @@ if (isset($_POST['Email'])) {
     $headers = 'De: ' . $email . "\r\n" .
         'Responder-a: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_mensaje, $headers);
+    mail($email_to, $email_subject, $email_mensaje, $headers);
+    header("Location: index.html");
+}
 ?>
 
     <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
 
     <html><body><p>Gracias por contactarnos.</p>
     <button onclick="history.go(-1);">Back </button></body></html>
-
-<?php
-}
-?>
