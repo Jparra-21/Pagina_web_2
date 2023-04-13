@@ -29,6 +29,7 @@
     top:100%;
     position:absolute;
     background-color: color(#8eb6dc, 100%);
+    -webkit-text-size-adjust: none;
 }
 .fondo {
     background-color: #abd9fc;
@@ -74,6 +75,8 @@
     grid-template-columns:30% 50%;
     font-family:Lucida Bright;
     font-weight: 400;
+    white-space: normal;
+    -webkit-text-size-adjust: none;
     
 }
 .cuerpo3 > div {
@@ -81,6 +84,7 @@
     padding-top: 80px;
     padding-left:80px;
     font-size: 30px;
+    padding-right: 20px;
 }
 .cuerpo4 {
     display:grid;
@@ -101,6 +105,8 @@ form {
     color: #333;
     text-align: left;
     width: min-content;
+    white-space: normal;
+    padding-right: 10px;
   }
   
   input[type="text"],
@@ -217,4 +223,13 @@ form {
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+  }
+
+  .p2 {
+    color:#000000;
+    font-weight: 500;
+    font-style:italic ;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 50px;
   }

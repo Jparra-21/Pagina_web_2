@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="./pagina2.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>    
 </head>
 <body class="fondo">
 <container class="contacto"><p><a href="https://www.linkedin.com/in/yasna-mora-b3898515b/?trk=people-guest_people_search-card&originalSubdomain=cl" 
@@ -37,7 +44,9 @@
                     <label for="message">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" required></textarea>
                   
-                    <button type="submit" onclick="myFunction()"><span class="popuptext" id="myPopup">Mensaje Enviado</span>Enviar</button>
+                    <button type="submit"><div class="popup" onclick="myFunction()">Enviar
+                        <span class="popuptext" id="myPopup">Mensaje Enviado</span>
+                      </div></button>
                   </form>
             </div>
         </section>
@@ -46,13 +55,7 @@
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>   
         </div> 
-        <section class="cuerpo2"></section>  
-        <script>
-            // When the user clicks on div, open the popup
-            function myFunction() {
-              var popup = document.getElementById("myPopup");
-              popup.classList.toggle("show");
-            }
-            </script>    
+        <section class="cuerpo2"><p class="p2">Pagina Creada por JPL</p></section>  
+        
 </body>
 </html>
