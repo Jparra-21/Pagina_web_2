@@ -14,8 +14,11 @@
 .contacto {
     background-color:none;
     position: fixed;
-    left:89%;
+    left:80%;
     top:5%;
+    height: 72px;
+    width: 150px;
+    overflow: none;
 }
 .cuerpo {
     background-image: url("./imagen_fondo.jpg");
@@ -242,3 +245,19 @@ form {
     text-align: center;
     padding-top: 50px;
   }
+
+  .ChatonWhatsApp {
+height: 75px;
+width: 200px;
+border-radius: 5px;
+  }
+.ChatonWhatsApp2 {
+  height: 100px;
+  width: 250px;
+  border-radius: 5px;
+  } 
+.email {
+   height: 100px;
+   width: 150px;
+   border-radius: 5px;
+  }       
