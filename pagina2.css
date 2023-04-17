@@ -81,15 +81,15 @@
 }
 .item1 {
     text-align: left;
-    padding-top: 80px;
-    padding-left:80px;
-    font-size: 25px;
-    padding-right: 20px;
+    padding-top: 50%;
+    padding-left:30px;
+    font-size: 23px;
+    padding-right: 50px;
     display:block;
 }
 .item2 {
   text-align: center;
-    padding-top: 80px;
+    padding-top: 20%;
     padding-left:25%;
     display:block;
 }
@@ -243,8 +243,8 @@ form {
   }
 
   .ChatonWhatsApp {
-height: 75px;
-width: 200px;
+height: 40%;
+width: 80%;
 border-radius: 5px;
   }
 .ChatonWhatsApp2 {
