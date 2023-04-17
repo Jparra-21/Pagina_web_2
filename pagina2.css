@@ -14,8 +14,8 @@
 .contacto {
     background-color:none;
     position: fixed;
-    left:90%;
-    top:5%;
+    left:90vw;
+    top:5vh;
 }
 .cuerpo {
     background-image: url("./imagen_fondo.jpg");
