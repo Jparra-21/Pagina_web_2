@@ -14,7 +14,7 @@
 .contacto {
     background-color:none;
     position: fixed;
-    left:92%;
+    left:90%;
     top:5%;
 }
 .cuerpo {
@@ -246,24 +246,18 @@ form {
   }
 
   .ChatonWhatsApp {
-    height:40%;
-    width:60%;
-    max-width: 150px;
+    max-width: 100px;
     max-height: 100px;
     border-radius: 15px;
     border-color: #555 transparent transparent transparent;
   }
 .ChatonWhatsApp2 {
-  height: 50%;
-  width:50%;
   max-width: 100px;
   max-height: 100px;
   border-radius: 5px;
   } 
 .email {
-   height: 50%;
    max-width: 100px;
    max-height: 100px;
-   width:50%;
    border-radius: 5px;
   }       
