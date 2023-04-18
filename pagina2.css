@@ -14,8 +14,10 @@
 .contacto {
     background-color:none;
     position: fixed;
-    left:90vw;
-    top:5vh;
+    left: 80%;
+    top:5%;
+    transform: translate(-20%);
+    padding: 30px;
 }
 .cuerpo {
     background-image: url("./imagen_fondo.jpg");
