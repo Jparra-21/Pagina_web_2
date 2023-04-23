@@ -23,9 +23,7 @@
     background-image: url("./imagen_fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y:center;
-    background-position-x:center;
-    height: 100%;
+    height: auto;
     width: 100%;
     z-index: 1;
     top:100%;
@@ -46,7 +44,7 @@
     height:100px;
 }
 .cita {
-    text-align: center;
+    text-align: -webkit-center;
     font-style: italic;
     font-size: 46px;
     width: 40%;
